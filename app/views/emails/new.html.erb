@@ -1,0 +1,14 @@
+<h1>New email</h1>
+<pre>
+  <%= form_for @email do |e| %>
+    <p><label for="sendfrom">Send From Email Address</label><br/>
+    <%= e.text_field :send_from %>
+    <p><label for="sendto">Send To Email Address</label><br/>
+    <%= e.text_field :send_to %>
+    <p><label for="subject">Email Subject</label><br/>
+    <%= e.text_field :subject %>
+    <p><label for="text">Email Text</label><br/>
+    <%= e.text_area :text %>
+    <%= e.submit %>
+  <%end%>
+</pre>
